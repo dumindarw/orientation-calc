@@ -87,13 +87,8 @@ public class RecordFragment extends Fragment implements View.OnClickListener{
     }
 
     private void stopSaveJob(){
-        jobTask.cancel(true);
-
-       /* File dir = getActivity().getExternalFilesDir("");
-
-        String csvFile = dir.getAbsolutePath() + fileNo + "abc.csv";
-
-        File file = new File(csvFile);*/
+        if(jobTask != null)
+            jobTask.cancel(true);
 
         Toast.makeText(getActivity(),"Stopped...", Toast.LENGTH_SHORT).show();
     }
@@ -140,8 +135,6 @@ public class RecordFragment extends Fragment implements View.OnClickListener{
         }
         @Override
         protected Void doInBackground(Void... params) {
-
-
 
             StatisticsViewModel statisticsViewModel = ViewModelProviders.
                     of(getActivity()).

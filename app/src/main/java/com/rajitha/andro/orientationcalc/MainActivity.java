@@ -1,16 +1,9 @@
 package com.rajitha.andro.orientationcalc;
 
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
-import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.support.v7.app.AppCompatActivity;
 
-import com.rajitha.andro.orientationcalc.helpers.StatisticsViewModel;
 import com.rajitha.andro.orientationcalc.interfaces.StatisticsCallback;
 import com.rajitha.andro.orientationcalc.model.Statistics;
 import com.rajitha.andro.orientationcalc.utils.CSVUtils;

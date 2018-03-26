@@ -1,7 +1,5 @@
 package com.rajitha.andro.orientationcalc.interfaces;
 
-import android.content.Context;
-
 import com.rajitha.andro.orientationcalc.model.Statistics;
 
 /**
